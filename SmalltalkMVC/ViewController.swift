@@ -10,12 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  private lazy var counterView = CounterView()
-  
-  override func loadView() {
-    view = counterView
-    view.backgroundColor = .white
-  }
+  @IBOutlet weak var counterView: CounterView!
 
   override func viewDidLoad() {
     super.viewDidLoad()
